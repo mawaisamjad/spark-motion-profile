@@ -31,7 +31,7 @@ const Hero = () => {
         className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-6 items-center"
       >
         <div className="order-2 lg:order-1">
-          <p className="animate-on-scroll text-primary font-medium mb-4">Hello, I'm</p>
+          <p className="animate-on-scroll text-primary font-medium mb-4">Hello, I am</p>
           <h1 className="animate-on-scroll text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
             <span className="gradient-text">Awais Amjad</span>
           </h1>
