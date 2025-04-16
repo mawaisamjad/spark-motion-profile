@@ -86,7 +86,7 @@ const Hero = () => {
           <div className="relative">
             <div className="w-64 h-64 md:w-80 md:h-80 overflow-hidden rounded-full bg-gradient-to-tr from-primary to-purple-600 p-1 animate-float shadow-xl">
               <img 
-                src="https://imgur.com/a/UvHB2lr" 
+                src="https://images.unsplash.com/photo-1615454782617-e69bbd4f2969?q=80&w=2028&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
                 alt="Portfolio Owner" 
                 className="w-full h-full object-cover rounded-full"
               />
