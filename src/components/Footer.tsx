@@ -45,16 +45,16 @@ const Footer = () => {
             <h3 className="text-lg font-bold mb-4 text-white">Contact</h3>
             <ul className="space-y-2">
               <li className="text-background/80">
-                San Francisco, CA, USA
+                262 Flat no, F Block Johar Town Lahore, Punjab, Pakistan
               </li>
               <li>
-                <a href="mailto:contact@example.com" className="text-background/80 hover:text-white transition-colors">
-                  contact@example.com
+                <a href="mailto:get.awaisamjad@gmail.com" className="text-background/80 hover:text-white transition-colors">
+                 get.awaisamjad@gmail.com
                 </a>
               </li>
               <li>
                 <a href="tel:+15555555555" className="text-background/80 hover:text-white transition-colors">
-                  +1 (555) 555-5555
+                  +92-3424943503
                 </a>
               </li>
             </ul>
