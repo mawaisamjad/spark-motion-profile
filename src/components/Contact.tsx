@@ -2,6 +2,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Send, MapPin, Mail, Phone } from 'lucide-react';
 import { toast } from 'sonner';
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -43,22 +44,42 @@ const Contact = () => {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
-    setTimeout(() => {
-      console.log('Form submitted:', formData);
-      toast.success('Message sent successfully! I will get back to you soon.');
-      setFormData({
-        name: '',
-        email: '',
-        subject: '',
-        message: ''
-      });
+    try {
+      // Replace these with your actual EmailJS service ID, template ID, and user ID
+      const serviceId = 'YOUR_SERVICE_ID';
+      const templateId = 'YOUR_TEMPLATE_ID';
+      const userId = 'YOUR_USER_ID';
+      
+      const templateParams = {
+        from_name: formData.name,
+        from_email: formData.email,
+        subject: formData.subject,
+        message: formData.message
+      };
+      
+      const response = await emailjs.send(serviceId, templateId, templateParams, userId);
+      
+      if (response.status === 200) {
+        toast.success('Message sent successfully! I will get back to you soon.');
+        setFormData({
+          name: '',
+          email: '',
+          subject: '',
+          message: ''
+        });
+      } else {
+        toast.error('Failed to send message. Please try again later.');
+      }
+    } catch (error) {
+      console.error('Error sending email:', error);
+      toast.error('Failed to send message. Please try again later.');
+    } finally {
       setIsSubmitting(false);
-    }, 1500);
+    }
   };
 
   return (
@@ -70,6 +91,7 @@ const Contact = () => {
         </p>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+          {/* Contact Information */}
           <div className="animate-on-scroll">
             <div className="bg-white rounded-lg shadow-md p-6 border border-border">
               <h3 className="text-2xl font-bold mb-6 gradient-text">Contact Information</h3>
@@ -160,6 +182,7 @@ const Contact = () => {
             </div>
           </div>
           
+          {/* Contact Form */}
           <div className="animate-on-scroll">
             <form 
               onSubmit={handleSubmit}
