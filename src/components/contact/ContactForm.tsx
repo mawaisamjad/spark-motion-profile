@@ -30,10 +30,16 @@ const ContactForm = () => {
     setIsSubmitting(true);
     
     try {
-      // EmailJS configuration
-      const serviceId = 'service_emailjs'; // Replace with your actual EmailJS service ID
-      const templateId = 'template_contact'; // Replace with your actual EmailJS template ID
-      const userId = 'YOUR_USER_ID'; // Replace with your actual EmailJS user ID
+      // Replace these with your actual EmailJS credentials
+      const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+      const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+      const userId = import.meta.env.VITE_EMAILJS_USER_ID;
+      
+      if (!serviceId || !templateId || !userId) {
+        toast.error('Email service configuration is missing. Please contact support.');
+        setIsSubmitting(false);
+        return;
+      }
       
       const templateParams = {
         from_name: formData.name,
