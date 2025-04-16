@@ -27,7 +27,7 @@ export const projects: Project[] = [
     id: 2,
     title: "AI Content Generator",
     description: "An AI-powered application that generates high-quality content for blogs, social media, and marketing.",
-    image: "https://images.unsplash.com/photo-1655720031554-a929595ffcc7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80",
+    image: "https://media.istockphoto.com/id/2168215142/photo/interaction-with-the-ai-assistant-to-solve-some-tasks-more-easily-image-generator-documents.jpg?s=2048x2048&w=is&k=20&c=C2T23oo5sF0KXCbzZCoL5PGuTdo5MR26JVTcRloEKSI=",
     technologies: ["React", "OpenAI API", "Firebase", "TailwindCSS"],
     link: "https://project-link.com",
     github: "https://github.com/yourusername/project",
