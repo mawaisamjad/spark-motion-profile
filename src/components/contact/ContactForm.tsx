@@ -30,10 +30,10 @@ const ContactForm = () => {
     setIsSubmitting(true);
     
     try {
-      // Replace these with your actual EmailJS service ID, template ID, and user ID
-      const serviceId = 'YOUR_SERVICE_ID';
-      const templateId = 'YOUR_TEMPLATE_ID';
-      const userId = 'YOUR_USER_ID';
+      // EmailJS configuration
+      const serviceId = 'service_emailjs'; // Replace with your actual EmailJS service ID
+      const templateId = 'template_contact'; // Replace with your actual EmailJS template ID
+      const userId = 'YOUR_USER_ID'; // Replace with your actual EmailJS user ID
       
       const templateParams = {
         from_name: formData.name,
