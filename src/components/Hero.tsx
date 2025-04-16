@@ -33,7 +33,7 @@ const Hero = () => {
         <div className="order-2 lg:order-1">
           <p className="animate-on-scroll text-primary font-medium mb-4">Hello, I'm</p>
           <h1 className="animate-on-scroll text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
-            <span className="gradient-text">John Doe</span>
+            <span className="gradient-text">Awais Amjad</span>
           </h1>
           <h2 className="animate-on-scroll text-2xl md:text-3xl font-bold mb-6 text-foreground/80">
             Full Stack Developer
