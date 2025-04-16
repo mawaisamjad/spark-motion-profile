@@ -55,7 +55,7 @@ const Hero = () => {
           
           <div className="animate-on-scroll flex gap-4">
             <a 
-              href="https://github.com/yourusername" 
+              href="https://github.com/mawaisamjad" 
               target="_blank" 
               rel="noopener noreferrer"
               className="w-10 h-10 bg-secondary rounded-full flex items-center justify-center text-foreground/70 hover:text-primary hover:bg-secondary/80 transition-colors"
@@ -64,7 +64,7 @@ const Hero = () => {
               <Github size={20} />
             </a>
             <a 
-              href="https://linkedin.com/in/yourusername" 
+              href="https://www.linkedin.com/in/muhammad-awais-9972a6317/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="w-10 h-10 bg-secondary rounded-full flex items-center justify-center text-foreground/70 hover:text-primary hover:bg-secondary/80 transition-colors"
@@ -73,7 +73,7 @@ const Hero = () => {
               <Linkedin size={20} />
             </a>
             <a 
-              href="mailto:your.email@example.com" 
+              href="mailto:get.awaisamjad@gmail.com" 
               className="w-10 h-10 bg-secondary rounded-full flex items-center justify-center text-foreground/70 hover:text-primary hover:bg-secondary/80 transition-colors"
               aria-label="Email"
             >
